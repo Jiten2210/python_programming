@@ -1,28 +1,26 @@
 # print
 print("Hi Jitu! Welcome to Python World")
 
-cars = 100
-space_in_a_car = 4.0
-drivers = 30
-passengers = 90
-cars_not_driven = cars - drivers
-cars_driven = drivers
-carpool_capacity = cars_driven * space_in_a_car
-average_passengers_per_car = passengers / cars_driven
-print("There are", cars, "cars available.")
-print("There are only", drivers, "drivers available.")
-print("There will be", cars_not_driven, "empty cars today.")
-print("We can transport", carpool_capacity, "people today.")
-print("We have", passengers, "to carpool today.")
-print("We need to put about", average_passengers_per_car, "in each car.")
+players = 15
+players_can_play = 11
+print("There are", players, "cars available.")
+print("There are only", players_can_play, "can play.")
 
 print("There are %d types of people." % 10)
 binary = "binary"
 do_not = "don't"
 print("Those who know %s and those who %s." % (binary, do_not))
 
+
+#loop
 for i in range(5):
     print(i)
+
+listOne = [123, 345, 456, 23]
+print("Using enumerate")
+for index, element in enumerate(listOne):
+    print("Index [", index,"]", "Value", element)
+
 
 #String
 String1 = "TeamIndia"
@@ -69,6 +67,18 @@ print(len(b))
 
 c = ["hey", "you", 1, 2, 3, "go"]
 print(c)
+
+listNumbers = [20, 22, 24, 26, 28, 28, 20, 30, 24]
+print("Original= ", listNumbers)
+
+listNumbers = list(set(listNumbers))
+print("After removing duplicate= ", listNumbers)
+
+set1 = set(['Scott', 'Eric', 'Kelly', 'Emma', 'Smith'])
+set2 = set(['Scott', 'Eric', 'Kelly'])
+
+list3 = list(set1.symmetric_difference(set2))
+print(list3)
 
 # Tuple
 a = (1, 2, 3, 4)
