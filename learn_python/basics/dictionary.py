@@ -1,4 +1,5 @@
-from  collections import OrderedDict
+import collections
+from collections import OrderedDict
 
 print("Dictionary:\n")
 d = {}
@@ -28,3 +29,19 @@ print("\nAfter re-inserting:\n")
 od['c'] = 3
 for k, v in od.items():
     print(k, v)
+
+# initializing dictionaries
+dic1 = {'a': 1, 'b': 2}
+dic2 = {'b': 3, 'c': 4}
+
+# initializing ChainMap
+chain = collections.ChainMap(dic1, dic2)
+
+# printing chainMap using maps
+print(chain.maps)
+
+# printing keys using keys()
+print(list(chain.keys()))
+
+# printing keys using keys()
+print(list(chain.values()))

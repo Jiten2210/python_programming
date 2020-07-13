@@ -3,8 +3,8 @@ print("Hi Jitu! Welcome to Python World")
 
 players = 15
 players_can_play = 11
-print("There are", players, "cars available.")
-print("There are only", players_can_play, "can play.")
+print("There are", players, "players available.")
+print("Only", players_can_play, "players can play.")
 
 print("There are %d types of people." % 10)
 binary = "binary"

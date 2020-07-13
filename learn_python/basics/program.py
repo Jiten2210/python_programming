@@ -135,15 +135,15 @@ for word in words:
     print(word)
 
 # count number of vowels
-#method 1
+# method 1
 vowels = 'aeiou'
 str = str.casefold()
 count = {}.fromkeys(vowels, 0)
 
 for c in str:
     if c in count:
-        count[c]+=1
+        count[c] += 1
 print(count)
 
-#method 2
-print({x:sum([1 for char in str if char == x]) for x in vowels})
+# method 2
+print({x: sum([1 for char in str if char == x]) for x in vowels})
