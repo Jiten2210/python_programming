@@ -31,7 +31,6 @@ list5[index] = 4
 print(list5)
 
 # lowercase letter first
-
 inputStr = "PyThoN"
 words = inputStr.split()
 lower = []
@@ -45,7 +44,6 @@ sortedString = ''.join(lower + upper)
 print(sortedString)
 
 # string count
-
 input = "gaya went gaya"
 target = "gaya"
 temp = input.lower()
@@ -53,7 +51,6 @@ count = temp.count(target.lower())
 print("gaya occured", count, "times")
 
 # count occurence of all character
-
 input1 = "indiaisagreatnation"
 dict = dict()
 for char in input1:
@@ -77,7 +74,6 @@ sampleDict = {
 print(sampleDict['class']['student']['marks']['history'])
 
 # Create new dictionary with given key
-
 inputDict = {
     "name": "MSD",
     "age": 39,
@@ -89,7 +85,6 @@ newDict = {k: inputDict[k] for k in keys}
 print(newDict)
 
 # swap numbers
-
 x = 10
 y = 20
 x, y = y, x
@@ -97,36 +92,26 @@ print(x)
 print(y)
 
 # check it all elements are same
-
 tuple1 = (1, 1, 1, 1)
 print(all(i == tuple1[0] for i in tuple1))
 
-
 # variable arguments
-
 def func(*args):
     for i in args:
         print(i)
-
-
 func(20, 40, 60)
 func(80, 100)
-
 
 # default param
 def getEmployee(name, salary=9000):
     print("Employee", name, "salary is:", salary)
-
-
 getEmployee("X", 80000)
 getEmployee("Y")
 
 # even numbers between 1 and 20
-
 print(list(range(0, 20, 2)))
 
 # sort words alphabetically
-
 str = "India is a great nation"
 words = str.split()
 
@@ -148,18 +133,12 @@ print(count)
 # method 2
 print({x: sum([1 for char in str if char == x]) for x in vowels})
 
-
 # factorial
-
 def factorial(n):
     return 1 if (n == 1 or n == 0) else n * factorial(n - 1);
-
-
 print(factorial(5))
 
-
 # fibonacci
-
 def fibonacci(n):
     a = 0
     b = 1
@@ -173,12 +152,9 @@ def fibonacci(n):
             a = b
             b = c
         return b
-
-
 print(fibonacci(8))
 
 # sum of squares of first n numbers
-
 sum = 0
 for i in range(1, 5 + 1):
     sum += (i * i)
