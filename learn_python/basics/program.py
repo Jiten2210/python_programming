@@ -175,4 +175,16 @@ def fibonacci(n):
         return b
 
 
-print(fibonacci(7))
+print(fibonacci(8))
+
+# sum of squares of first n numbers
+
+sum = 0
+for i in range(1, 5 + 1):
+    sum += (i * i)
+print(sum)
+
+# split array and move to end
+k =3
+arr = [1, 2, 3, 4, 5, 6]
+print(arr[k::] + arr[:k])
