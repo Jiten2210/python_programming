@@ -147,3 +147,33 @@ print(count)
 
 # method 2
 print({x: sum([1 for char in str if char == x]) for x in vowels})
+
+
+# factorial
+
+def factorial(n):
+    return 1 if (n == 1 or n == 0) else n * factorial(n - 1);
+
+
+print(factorial(5))
+
+
+# fibonacci
+
+def fibonacci(n):
+    a = 0
+    b = 1
+    if (n < 0):
+        return -1
+    elif (n == 0):
+        return a
+    elif (n == 1):
+        return b
+    else:
+        for i in range(2, n):
+            c = a + b
+            a = b
+            b = c
+        return b
+    
+print(fibonacci(7))
