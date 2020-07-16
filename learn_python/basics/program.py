@@ -165,15 +165,14 @@ def fibonacci(n):
     b = 1
     if (n < 0):
         return -1
-    elif (n == 0):
-        return a
-    elif (n == 1):
-        return b
+    elif (n == 0 or n == 1):
+        return n
     else:
         for i in range(2, n):
             c = a + b
             a = b
             b = c
         return b
-    
+
+
 print(fibonacci(7))
