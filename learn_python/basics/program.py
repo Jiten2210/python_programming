@@ -95,16 +95,22 @@ print(y)
 tuple1 = (1, 1, 1, 1)
 print(all(i == tuple1[0] for i in tuple1))
 
+
 # variable arguments
 def func(*args):
     for i in args:
         print(i)
+
+
 func(20, 40, 60)
 func(80, 100)
+
 
 # default param
 def getEmployee(name, salary=9000):
     print("Employee", name, "salary is:", salary)
+
+
 getEmployee("X", 80000)
 getEmployee("Y")
 
@@ -133,10 +139,14 @@ print(count)
 # method 2
 print({x: sum([1 for char in str if char == x]) for x in vowels})
 
+
 # factorial
 def factorial(n):
     return 1 if (n == 1 or n == 0) else n * factorial(n - 1);
+
+
 print(factorial(5))
+
 
 # fibonacci
 def fibonacci(n):
@@ -152,6 +162,8 @@ def fibonacci(n):
             a = b
             b = c
         return b
+
+
 print(fibonacci(8))
 
 # sum of squares of first n numbers
@@ -161,6 +173,17 @@ for i in range(1, 5 + 1):
 print(sum)
 
 # split array and move to end
-k =3
+k = 3
 arr = [1, 2, 3, 4, 5, 6]
 print(arr[k::] + arr[:k])
+
+# print even/odd count in a list
+list6 = [12, 13, 14, 11, 19, 16, 21]
+odd_nums = [odd for odd in list6 if odd % 2 == 1]
+odd_count = len(odd_nums)
+print("Even numbers count ---> ", len(list6) - odd_count)
+print("Odd numbers count ---> ", odd_count)
+
+# Python code to replace, with . and vice-versa
+str1 = "1,2,3.4,5.6,7"
+print(str1.translate(str1.maketrans(', .', '., ')))
